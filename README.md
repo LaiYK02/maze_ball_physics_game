@@ -1,42 +1,212 @@
-# \# Maze Ball Physics Game
+\# Maze Ball Physics Game
 
 
 
-A 3D physics-based maze game created using Processing.
+A 3D physics-based maze game developed using Processing (Java Mode).
 
 
 
-##### \## Features
+Players control a rolling ball by tilting the board, navigating through maze obstacles, avoiding holes, and reaching the goal area as quickly as possible.
+
+
+
+\---
+
+
+
+\## Gameplay Preview
+
+
+
+!\[Main Menu](screenshots/main-menu.png)
+
+!\[Tutorial](screenshots/tutorial.png)
+
+!\[Gameplay](screenshots/gameplay.png)
+
+!\[Game Won](screenshots/game-won.png)
+
+
+
+\---
+
+
+
+\## Features
+
+
 
 \- Physics-based rolling ball
 
-\- Collision detection
+\- Gravity simulation using board tilt
 
-\- Friction and restitution
+\- Circle vs AABB collision detection
 
-\- Main menu system
+\- Friction and restitution system
+
+\- Interactive main menu
 
 \- Tutorial screen
 
-\- High scores saving
+\- High scores system
+
+\- Win screen with timer
+
+\- Persistent TXT leaderboard
 
 \- 3D maze gameplay
 
 
 
-##### \## Controls
-
-\- W/A/S/D → Tilt board
-
-\- Q/E → Adjust restitution
-
-\- Z/C → Adjust friction
+\---
 
 
 
-##### \## Built With
+\## Controls
+
+
+
+| Key | Function |
+
+|---|---|
+
+| W | Tilt board up |
+
+| S | Tilt board down |
+
+| A | Tilt board left |
+
+| D | Tilt board right |
+
+| Q | Increase restitution |
+
+| E | Decrease restitution |
+
+| Z | Increase friction |
+
+| C | Decrease friction |
+
+
+
+\---
+
+
+
+\## Built With
+
+
 
 \- Processing (Java Mode)
 
+\- Java / PVector
+
 \- P3D Renderer
+
+
+
+\---
+
+
+
+\## Physics Concepts Implemented
+
+
+
+\- Gravity simulation
+
+\- Acceleration and velocity
+
+\- Symplectic Euler integration
+
+\- Friction
+
+\- Restitution
+
+\- Collision detection
+
+\- Collision response impulse
+
+
+
+\---
+
+
+
+\## How To Run
+
+
+
+\### Using Processing
+
+1\. Install Processing:
+
+https://processing.org/download
+
+
+
+2\. Open the `.pde` sketch file.
+
+
+
+3\. Click \*\*Run\*\*.
+
+
+
+\---
+
+
+
+\## Download Playable Version
+
+
+
+Download the latest playable build from: \[Releases](../../releases)
+
+
+
+\---
+
+
+
+\## Project Structure
+
+
+
+```text
+
+MazeBall/
+
+├── MazeBall.pde
+
+├── data/
+
+│   └── highscores.txt
+
+├── README.md
+
+```
+
+
+
+\---
+
+
+
+\## Author
+
+
+
+Lai Yong Kang
+
+
+
+\---
+
+
+
+\## License
+
+
+
+This project was created for educational purposes.
 
